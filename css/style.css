@@ -1,0 +1,92 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 60px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav .name {
+  display: none;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+} /* Changes the color of the text when hovering over anything with a anchor tag within the Nav tag.*/
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+header {
+  background: url('../img/Bungay.jpg') no-repeat;
+  background-size: cover;
+  color: black;
+  font-size:25px;
+  padding: 80px;
+  text-align: center;
+} /* This CSS area will effect the header element within the HTML file meaning it will change the hero image with whatever I need. Within this current area the Font is changed, The size of the whole header is set to a certain level helping it display how it is in the webpage*/
+header .google-picture {
+  height: 50px;
+} /* This is just a simple CSS area where the google image I have linked will be smaller to fit the header.*/
+header .profile-picture{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid black;
+} /* Within this section it is pinpointing the element with a class ID which in the HTML file is listed with the element "Class=" this is so that I can chnage only the image and nothing else gets effected (For example colour of the border and the size of the image.)*/
+header .profile-picture:hover {
+  transform: scale(1.2);
+} /* This one wasnt really needed however I like the design with it this will just chnage the size of the image by a small margin when its being hovered over. */
+button {
+  background: rgba(0, 0, 255, .5); /* this is just me showing off and using the new css I learnt makes the button blue due to not having any red or green properties but has full blue properties (max 255, min 0. And has opacity due to alpha (a))*/
+}
+/* Anything below this is where the challange ends (I am making the contact page to see what else I can make with what I have learnt) */
+main {
+  padding: 50px;
+  background-color: cyan;
+}
+.heading-contact {
+  color: white
+}
+.twitter {
+  height: 40px;
+  width: 40px;
+}
+.facebook {
+  height: 40px;
+  width: 70px;
+}
